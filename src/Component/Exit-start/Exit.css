@@ -1,0 +1,144 @@
+
+.start-exit-sections{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+    justify-content: center;
+    gap: 20px;
+    height: 90vh;
+    padding: 20px;
+    align-items: center;
+}   
+
+.start-exit-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #09001d;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+}   
+
+.two-headings {
+    text-align: center;
+    /* color: #c40094; */
+    font-weight: bolder;
+}
+
+.two-input-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+
+}
+
+.player {
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+
+}
+
+.star {
+    color: red;
+    font-size: 1.2em;
+    margin-left: 5px;
+}
+
+.player h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.player input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .two-input-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .start-exit-sections{
+        padding: 10px;
+    }
+    .player {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+.btn-section{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.start-game {
+    width: 110px;
+    height: 45px;
+    background-color: #c40094;
+    border: 2px solid #c40094;
+    border: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.start-game:hover {
+    background: transparent;
+    border: 2px solid #c40094;
+    color: #c40094;
+}
+
+.exit-game {
+    width: 110px;
+    height: 45px;
+    background-color: #c40094;
+    border: 2px solid #c40094;
+    border: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.exit-game:hover {
+    background: transparent;
+    border: 2px solid #c40094;
+    color: #c40094;
+}
+
+.error-text {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+    padding:0 4px;
+}

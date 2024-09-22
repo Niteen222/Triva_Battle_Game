@@ -1,0 +1,125 @@
+.heading-sections h1{
+    font-size:2.3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(54, 11, 56, 1) 0%, rgba(223, 13, 190, 1) 35%, rgba(68, 26, 37, 1) 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+@media (max-width: 768px) {
+    .heading-sections .two-headings {
+        font-size: 1.5em;
+    }
+
+    .heading-section img {
+        height: 30px;
+        /* width: 30px; */
+    }
+}
+
+@media (max-width: 480px) {
+    .heading-sections .two-headings {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 375px) {
+    .heading-sections .two-headings {
+        font-size: 1.4em;
+    }
+
+    .heading-section img {
+        height: 18px;
+        /* width: 18px; */
+    }
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 91vh;
+    padding: 0 8px;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    color: #000;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.home-content {
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.home-content p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.start-btn {
+    background: linear-gradient(90deg, rgba(54, 11, 56, 1) 0%, rgba(223, 13, 190, 1) 35%, rgba(68, 26, 37, 1) 100%);
+    color: #f9f9f9;
+    border: 2px solid transparent;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.start-btn:hover {
+    border: 2px solid #c40094;
+    background: transparent;
+    color: #c40094;
+}
+
+.Welcome {
+    font-size: 26px;
+    font-weight: bold;
+    color: #c40094;
+}
+
+@media (max-width: 425px) {
+    .home-content {
+        padding: 5px 10px;
+    }
+    .home-content p {
+        font-size: 17px;
+    }
+    .home{
+        padding: 20px 0;
+    }
+    .Welcome{
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 320px) {
+    .Welcome {
+        font-size: 20px;
+    }
+
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+    .Welcome{
+        font-size: 15px;
+    }
+  
+}
+
+.black-hr{
+    height: 2px;
+    width: 100%;
+    background: #000;
+}

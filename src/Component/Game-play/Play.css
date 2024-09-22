@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box; 
+}
+
+.play {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding:10px;
+    align-items: center;
+    height:100vh;
+    min-width: 100%;
+}
+
+.question-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #09001d;
+    justify-content: center;
+    background-color: #f9f9f9;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px; 
+    max-height: 100vh; 
+    overflow: auto; 
+}
+.category-game {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.category-game .select {
+    padding: 10px 39px;
+    border-radius: 5px;
+    flex: 1;
+    font-size: 1rem;
+    border: 2px solid #f9f9f9;
+    font-weight: bolder;
+    color: #f9f9f9;
+    background: linear-gradient(90deg, rgba(54, 11, 56, 1) 0%, rgba(223, 13, 190, 1) 35%, rgba(68, 26, 37, 1) 100%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.option {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+}
+
+.select:hover {
+    background-color: #444;
+    color: #fff; 
+}
+
+.varsus {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.varsus img {
+    height: 90px;
+}
+
+.varsus h3 {
+    padding: 10px 30px;
+    width: auto;
+    font-size: 1.7em;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(54, 11, 56, 1) 0%, rgba(223, 13, 190, 1) 35%, rgba(68, 26, 37, 1) 100%);
+    color: white;
+    border-radius: 30px 0;
+}
+
+.quiz-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.question-sections {
+    padding: 35px 15px;
+    background: linear-gradient(90deg, rgba(54, 11, 56, 1) 0%, rgba(223, 13, 190, 1) 35%, rgba(68, 26, 37, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.turn {
+    color: #f9f9f9;
+    justify-content: center;
+    text-align: center;
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Allow for wrapping */
+}
+
+.question h2 {
+    color: #f9f9f9;
+    text-align: center;
+    word-wrap: break-word; /* Ensure long words break to the next line */
+}
+
+.answer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answer-first{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.answer-first button{
+    padding: 10px 39px;
+    border-radius: 5px;
+    flex: 1; /* Make buttons flexible */
+    font-size: 1rem;
+    border: 2px solid #f9f9f9;
+    font-weight: bolder;
+    color: #f9f9f9;
+    background: linear-gradient(90deg, rgba(54, 11, 56, 1) 0%, rgba(223, 13, 190, 1) 35%, rgba(68, 26, 37, 1) 100%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.answer-first button:hover{
+    background: #f9f9f9;
+    border: 2px solid #c40094;
+    color: #c40094;
+}
+
+.next-question {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.next-question button {
+    background: linear-gradient(90deg, rgba(54, 11, 56, 1) 0%, rgba(223, 13, 190, 1) 35%, rgba(68, 26, 37, 1) 100%);
+    color: #f9f9f9;
+    border: 2px solid transparent;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.next-question button:hover {
+    border: 2px solid #c40094;
+    background: transparent;
+    color: #c40094;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+    .question-section {
+        padding: 15px 0;
+    }
+    .varsus h3 {
+        font-size: 1.1em;
+    }
+    .varsus img{
+        height: 60px;
+    }
+    .answer-first, .answer-second {
+        flex-direction: column;
+        width: 100%;
+    }
+    .answer-first button, .answer-second button {
+        width: 100%;
+    }
+    .next-question {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .next-question button {
+        width: 100%;
+        font-size: 1em;
+    }
+    .question h2 {
+        font-size: larger;
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .play{
+        padding: 0 14px;
+    }
+    .varsus img {
+        height: 60px;
+    }
+    .varsus h3 {
+        font-size: 1em;
+    }
+    .answer-first button{
+        font-size: 0.7rem;
+    }
+}
